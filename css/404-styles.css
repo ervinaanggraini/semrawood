@@ -1,0 +1,98 @@
+/* Base styles */
+body {
+    background-color: #08588F;
+    color: #f4e8da;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Back Button Style */
+  .back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #f4e8da;
+    color: #838a60;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #fff;
+    color: #6b754c;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    font-weight: 900;
+  }
+  
+  .container-eror {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f4e8da;
+    color: #838a60;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #6b754c;
+  }
+  
+  lottie-player {
+    width: 700px;
+    height: 700px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 4rem;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  
+    .button {
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .container {
+      padding: 0 5px;
+    }
+  
+    .button {
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    lottie-player {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
