@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | My Web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="/js/main.js"></script>
+  </head>
+
+  <body class="bg-cream text-brown">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-cream drop-shadow py-2 sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="/assets/images/logo-semrawood.webp"
+            alt="logo"
+            height="70"
+            class="me-2"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-poppins-large text-green fw-semibold"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-brown text-poppins-large"
+                href="#"
+                id="categoriesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu text-poppins">
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Craft</a></li>
+                <li><a class="dropdown-item" href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-brown text-poppins-large" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-gold"
+                href="#"
+                id="userDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-person-fill fs-5"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end text-poppins">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-light">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/videos/landing-page.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <img
+          src="/assets/images/landing-hero-text.png"
+          alt="logo"
+          class="img-fluid mb-4 hero-image"
+        />
+        <p class="mx-auto text-poppins-large text-green">
+          Welcome to <span class="text-cream fw-semibold">Semrawood</span> —
+          where timeless craftsmanship meets natural charm. <br />
+          Discover artisanal wooden pieces that warm your home and soul.
+        </p>
+        <a href="/pages/products.html" class="btn button mt-4 px-4 py-2">
+          Go to collection →
+        </a>
+      </div>
+    </section>
+
+    <div class="container mt-5">
+      <!-- About Section -->
+      <section class="bg-cream py-5 text-center text-poppins">
+        <div class="container">
+          <!-- Title -->
+          <h2 class="text-poppins-xxlarge fw-bold">
+            <span class="text-green">Explore Our</span>
+            <span class="text-gold text-newyork-xxxlarge">Curated</span>
+            <span class="text-green">Collections</span>
+          </h2>
+
+          <!-- Description -->
+          <p class="text-black mt-2 mb-5 text-poppins-large">
+            Discover timeless wooden pieces designed to bring warmth, beauty,
+            and sustainability into your space.
+          </p>
+
+          <!-- Responsive Layout -->
+          <div class="row g-4 d-flex align-items-stretch">
+            <!-- Kiri -->
+            <div
+              class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
+            >
+              <div
+                class="card custom-card equal-height-mobile effect-4 border-0 rounded-4 overflow-hidden"
+              >
+                <img
+                  src="/assets/images/about/hearthwood.png"
+                  class="card-img"
+                  alt="Hearthwood"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end text-start bg-dark bg-opacity-25 p-3"
+                >
+                  <h5 class="text-poppins-xlarge fw-bold text-cream">
+                    Hearthwood
+                  </h5>
+                  <p class="text-white text-poppins">
+                    Evokes warmth and natural elegance for living spaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tengah -->
+            <div
+              class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column align-items-center gap-4"
+            >
+              <div
+                class="card custom-card equal-height-mobile effect-4 border-0 rounded-4 overflow-hidden drop-shadow"
+              >
+                <img
+                  src="/assets/images/about/tabletop.png"
+                  class="card-img"
+                  alt="Tabletop Treasures"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end text-start bg-dark bg-opacity-25 p-3"
+                >
+                  <h5 class="text-poppins-xlarge fw-bold text-cream">
+                    Tabletop Treasures
+                  </h5>
+                  <p class="text-white text-poppins">
+                    Crafted wood essentials for dining and hosting.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card custom-card equal-height-mobile effect-4 border-0 rounded-4 overflow-hidden drop-shadow"
+              >
+                <img
+                  src="/assets/images/about/woodform.png"
+                  class="card-img"
+                  alt="WoodForms"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end text-start bg-dark bg-opacity-25 p-3"
+                >
+                  <h5 class="text-poppins-xlarge fw-bold text-cream">
+                    WoodForms
+                  </h5>
+                  <p class="text-white text-poppins">
+                    Functional artistry in compact wooden designs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kanan -->
+            <div
+              class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
+            >
+              <div
+                class="card custom-card equal-height-mobile effect-4 border-0 rounded-4 overflow-hidden drop-shadow"
+              >
+                <img
+                  src="/assets/images/about/tidy_timber.png"
+                  class="card-img"
+                  alt="Tidy Timber"
+                />
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-end text-start bg-dark bg-opacity-25 p-3"
+                >
+                  <h5 class="text-poppins-xlarge fw-bold text-cream">
+                    Tidy Timber
+                  </h5>
+                  <p class="text-white text-poppins">
+                    Neatly crafted, naturally organized.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Pieces -->
+      <section class="bg-cream py-5">
+        <div class="container-fluid">
+          <div
+            class="d-flex flex-wrap justify-content-between align-items-start mb-4"
+          >
+            <h2 class="text-newyork-xxxlarge fw-bold text-gold">
+              Featured
+              <span class="text-poppins-xxlarge text-green"> Pieces</span>
+            </h2>
+            <p class="text-poppins text-dark" style="max-width: 400px">
+              Elevate your everyday moments with handcrafted wooden essentials.
+              Sustainably made, beautifully designed — crafted to last, loved
+              for life.
+            </p>
+          </div>
+
+          <!-- Container untuk scroll horizontal -->
+          <div class="horizontal-scroll-container">
+            <div class="cards-grid justify-content-center d-flex gap-4">
+              <!-- Card 1 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <span class="discount-badge">-19%</span>
+                  <img
+                    class="img-front"
+                    src="/assets/images/products/roots-of-silence-front.png"
+                    alt="Front View"
+                  />
+                  <img
+                    class="img-back"
+                    src="/assets/images/products/roots-of-silence-back.png"
+                    alt="Back View"
+                  />
+                </div>
+                <div class="product-info">
+                  <div class="info-text">
+                    <div class="product-name">Roots of Silence</div>
+                    <div class="product-price"><s>Rp 159.000</s>Rp 129.000</div>
+                  </div>
+                  <button class="add-button">
+                    <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <span class="discount-badge">-8%</span>
+                  <img
+                    class="img-front"
+                    src="/assets/images/products/lemana-chair-front.png"
+                    alt="Front View"
+                  />
+                  <img
+                    class="img-back"
+                    src="/assets/images/products/lemana-chair-back.png"
+                    alt="Back View"
+                  />
+                </div>
+                <div class="product-info">
+                  <div class="info-text">
+                    <div class="product-name">Lemana Chair</div>
+                    <div class="product-price">
+                      <s>Rp 1.299.000</s>Rp 1.199.000
+                    </div>
+                  </div>
+                  <button class="add-button">
+                    <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="product-card">
+                <div class="product-image">
+                  <span class="discount-badge">-25%</span>
+                  <img
+                    class="img-front"
+                    src="/assets/images/products/noka-table-front.png"
+                    alt="Front View"
+                  />
+                  <img
+                    class="img-back"
+                    src="/assets/images/products/noka-table-back.png"
+                    alt="Back View"
+                  />
+                </div>
+                <div class="product-info">
+                  <div class="info-text">
+                    <div class="product-name">Noka Table</div>
+                    <div class="product-price">
+                      <s>Rp 1.999.000</s>Rp 1.499.000
+                    </div>
+                  </div>
+                  <button class="add-button">
+                    <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular -->
+      <section>
+        <div class="container py-5">
+          <div
+            class="d-flex flex-wrap justify-content-between align-items-start mb-4"
+          >
+            <div>
+              <h2 class="text-newyork-xxxlarge fw-bold text-gold">
+                Most Popular
+                <span class="text-poppins-xxlarge text-green"> Pieces</span>
+              </h2>
+              <p class="text-poppins text-dark" style="max-width: 400px">
+                Discover our most loved selections — Each piece is thoughtfully
+                crafted to elevate your space with style and subtle
+                sophistication.
+              </p>
+            </div>
+            <a href="/pages/products.html" class="button">View All ></a>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-21%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/timber-grace-vase-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/timber-grace-vase-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Timber Grace Vase</div>
+                      <div class="product-price">
+                        <s>Rp 239.000</s>Rp 189.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-33%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/river-stone-vase-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/river-stone-vase-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">River Stone Vase</div>
+                      <div class="product-price">
+                        <s>Rp 329.000</s>Rp 219.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-41%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/set-of-three-flat-pillows-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/set-of-three-flat-pillows-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Set of Three Flat Pillows</div>
+                      <div class="product-price">
+                        <s>Rp 489.000</s>Rp 289.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-19%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/linea-box-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/linea-box-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Linea Box</div>
+                      <div class="product-price">
+                        <s>Rp 159.000</s>Rp 129.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Card 5 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-55%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/sensei-bowl-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/sensei-bowl-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Sensei Bowl</div>
+                      <div class="product-price">
+                        <s>Rp 199.000</s>Rp 89.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-30%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/lunara-stand-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/lunara-stand-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Lunara Stand</div>
+                      <div class="product-price">
+                        <s>Rp 799.000</s>Rp 559.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-10%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/alba-seat-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/alba-seat-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Alba Seat</div>
+                      <div class="product-price">
+                        <s>Rp 999.000</s>Rp 889.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 8 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-25%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/iroko-nightstand-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/iroko-nightstand-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Iroko Nightstand</div>
+                      <div class="product-price">
+                        <s>Rp 879.000</s>Rp 659.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Achievement -->
+    <section>
+      <div class="py-5 bg-achievement text-white">
+        <div
+          class="container min-vh-100 d-flex align-items-center justify-content-center"
+        >
+          <div class="row align-items-center">
+            <!-- Left Column -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h1 class="text-newyork-display text-cream">
+                Rooted in<br />Craft, Refined<br />in Purpose
+              </h1>
+              <a href="#" class="btn button mt-4 px-4 py-2 rounded-pill"
+                >Read More ></a
+              >
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+              <p class="text-poppins-large text-cream">
+                At <span class="text-green fw-semibold">Semrawood</span>,
+                every piece is a blend of thoughtful design and natural
+                integrity. Our commitment to quality and sustainability reflects
+                in the details — crafted to enrich your everyday living.
+              </p>
+              <div class="row mt-4">
+                <div class="col-sm-6 mb-3">
+                  <h2 class="text-newyork-display text-cream fw-bold">98%</h2>
+                  <p class="mb-0 text-poppins-large text-cream">
+                    Customer satisfaction rooted in trust, beauty, and function.
+                  </p>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <h2 class="text-newyork-display text-cream fw-bold">100%</h2>
+                  <p class="mb-0 text-poppins-large text-cream">
+                    Handcrafted with care, using responsibly sourced natural
+                    wood.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
