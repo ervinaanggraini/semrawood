@@ -3,32 +3,408 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Product Detail</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Products</title>
+  <link rel="icon" href="/assets/images/logo-notext.png" type="image/png">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <script src="/js/main.js"></script>
 </head>
-<body class="bg-cream text-poppins text-brown">
+  <body class="bg-cream text-poppins">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-cream drop-shadow py-2 sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="/assets/images/logo-semrawood.webp"
+            alt="logo"
+            height="70"
+            class="me-2"
+          />
+        </a>
 
-  <nav class="navbar navbar-expand-lg bg-green p-3 drop-shadow">
-    <div class="container-fluid">
-      <a class="navbar-brand text-cream" href="/index.html">MyBrand</a>
-      <a class="nav-link text-cream" href="/pages/products.html">Back to Products</a>
-    </div>
-  </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="container mt-5">
-    <div class="row g-5">
-      <div class="col-md-6">
-        <img src="https://via.placeholder.com/500x350" class="img-fluid drop-shadow" alt="Product Image">
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-poppins-large text-green"
+                href="../../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-brown text-poppins-large fw-semibold"
+                href="#"
+                id="categoriesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu text-poppins">
+                <li><a class="dropdown-item" href="/pages/categories/products-1.html">All Products</a></li>
+                <li><a class="dropdown-item" href="/pages/categories/hearthwood.html">Hearthwood</a></li>
+                <li><a class="dropdown-item" href="/pages/categories/tabletop-treasures.html">Tabletop Treasures</a></li>
+                <li><a class="dropdown-item" href="/pages/categories/woodforms.html">WoodForms</a></li>
+                <li><a class="dropdown-item" href="/pages/categories/tidy-timber.html">Tidy Timber</a></li>
+              </ul>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link text-brown text-poppins-large" href="../../index.html#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-gold"
+                href="#"
+                id="userDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-person-fill fs-5"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end text-poppins">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h2 class="text-newyork text-green">Product Name</h2>
-        <p class="text-brown">Full description about the product goes here. You can explain materials, size, benefits, etc.</p>
-        <h4 class="text-gold">Rp 250.000</h4>
-        <button class="btn btn-success mt-3">Buy Now</button>
+    </nav>
+    
+    <!-- Details Product -->
+<!-- Product Detail Section -->
+<div class="container py-5">
+  <div class="mb-3 text-poppins">
+    <a href="#" class="text-decoration-none text-muted">Product Listing</a>
+    <span class="mx-1">></span>
+    <span class="text-brown">Dummy Product Page</span>
+  </div>
+
+  <div class="row">
+    <!-- Thumbnails -->
+    <div class="col-md-1 d-none d-md-flex flex-column gap-3">
+      <div class="bg-secondary" style="height: 100px;"></div>
+      <div class="bg-secondary border" style="height: 100px;"></div>
+      <div class="bg-secondary" style="height: 100px;"></div>
+    </div>
+
+    <!-- Main Image -->
+    <div class="col-md-5">
+      <div class="bg-secondary w-100" style="height: 500px;"></div>
+    </div>
+
+    <!-- Product Info -->
+    <div class="col-md-6 text-poppins">
+      <h5 class="fw-semibold text-brown">Double Bed & Side Tables</h5>
+      <h4 class="fw-bold">$54.98</h4>
+      <hr />
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magn.
+        Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magn.
+      </p>
+      <ul class="text-muted">
+        <li>Lorem ipsum dolor sit amet, adipi scing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipi scing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipi</li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3 my-4">
+        <button class="btn border rounded-circle px-3">−</button>
+        <span>1</span>
+        <button class="btn border rounded-circle px-3">+</button>
+      </div>
+
+      <div class="d-flex gap-3">
+        <button class="btn btn-dark px-4">Add to Cart</button>
+        <button class="btn btn-outline-dark px-4">Buy Now</button>
       </div>
     </div>
   </div>
 
-</body>
+  <!-- Description & Reviews Tabs -->
+  <div class="mt-5 text-poppins">
+    <div class="d-flex gap-3 border-bottom pb-2 mb-3">
+      <button class="btn p-0 border-0 bg-transparent tab-btn text-brown fw-semibold" onclick="showTab('desc')">Description</button>
+      <button class="btn p-0 border-0 bg-transparent tab-btn text-muted" onclick="showTab('review')">Reviews</button>
+    </div>
+
+    <div id="desc-tab" class="tab-content">
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+      </p>
+      <ul class="text-muted">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</li>
+      </ul>
+    </div>
+
+    <div id="review-tab" class="tab-content d-none">
+      <p class="text-muted">Belum ada ulasan untuk produk ini.</p>
+    </div>
+  </div>
+
+</div>
+
+<section>
+        <div class="container py-5 mb-3">
+          <div
+            class="d-flex flex-wrap justify-content-between align-items-start mb-4"
+          >
+            <div>
+              <h2 class="text-newyork-xxxlarge fw-bold text-gold">
+                Similar 
+                <span class="text-poppins-xxlarge text-green"> Products</span>
+              </h2>
+            </div>
+          </div>
+          <div class="container-fluid">~~
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-21%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/timber-grace-vase-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/timber-grace-vase-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Timber Grace Vase</div>
+                      <div class="product-price">
+                        <s>Rp 239.000</s>Rp 189.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-33%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/river-stone-vase-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/river-stone-vase-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">River Stone Vase</div>
+                      <div class="product-price">
+                        <s>Rp 329.000</s>Rp 219.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-41%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/set-of-three-flat-pillows-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/set-of-three-flat-pillows-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Set of Three Flat Pillows</div>
+                      <div class="product-price">
+                        <s>Rp 489.000</s>Rp 289.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="product-card">
+                  <div class="product-image">
+                    <span class="discount-badge">-19%</span>
+                    <img
+                      class="img-front"
+                      src="/assets/images/products/linea-box-front.png"
+                      alt="Front View"
+                    />
+                    <img
+                      class="img-back"
+                      src="/assets/images/products/linea-box-back.png"
+                      alt="Back View"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <div class="info-text">
+                      <div class="product-name">Linea Box</div>
+                      <div class="product-price">
+                        <s>Rp 159.000</s>Rp 129.000
+                      </div>
+                    </div>
+                    <button class="add-button">
+                      <img src="/assets/images/icons/add-icon.png" alt="Add" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-green text-poppins text-cream px-custom py-5">
+      <div class="footer-content d-flex-wrap gap-8">
+        
+        <!-- Subscription Section -->
+        <div class="footer-subscription">
+          <p class="text-poppins-large font-semibold fw-bold">
+            Sign up for email and/or texts for the latest updates, special offers, and more.
+          </p>
+          <p class="text-poppins mt-2">
+            By entering your email address and clicking “Join Us” you agree to receive marketing email messages from Semrawood at the email address provided. Unsubscribe at any time. View our <a href="#" class="underline">Privacy Policy</a> & <a href="#" class="underline">Terms of Service</a>.
+          </p>
+
+          <div class="subscribe-container mt-4 mb-4">
+            <input type="email" placeholder="Your Email" class="subscribe-input" />
+            <button class="subscribe-button">Join us</button>
+          </div>
+
+          <p class="text-poppins text-xs mt-6">
+            By entering your phone number and clicking “Join Us,” you agree to receive recurring automated promotional and personalized marketing text messages from Semrawood at the cell number used when signing up. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel text messages. View our <a href="#" class="underline">Privacy Policy</a> & <a href="#" class="underline">Terms of Service</a>.
+          </p>
+
+          <div class="subscribe-container mt-4">
+            <input type="tel" placeholder="Your Mobile" class="subscribe-input" />
+            <button class="subscribe-button">Join us</button>
+          </div>
+        </div>
+
+        <!-- Shop & Company Info -->
+        <div class="footer-column">
+          <p class="text-newyork-large text-bold mb-2">SHOP</p>
+          <ul class="footer-links">
+            <li>Face</li>
+            <li>Eye</li>
+            <li>Lip</li>
+            <li>Tools</li>
+            <li>Online Only</li>
+          </ul>
+
+          <p class="text-newyork-large text-bold mt-6 mb-2">COMPANY</p>
+          <ul class="footer-links">
+            <li>About Us</li>
+            <li>Rare Impact</li>
+            <li>Made Accessible</li>
+            <li>Sustainability</li>
+            <li>Store Locator</li>
+              </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="footer-column">
+              <p class="text-newyork-large text-bold mb-2">CUSTOMER SERVICE</p>
+              <ul class="footer-links">
+                <li>Contact Us</li>
+                <li>Shipping & Returns</li>
+                <li>Start a U.S. Return</li>
+                <li>FAQs</li>
+                <li>U.S. Gift Card Balance</li>
+                <li>Shade Match Live Chat</li>
+                <li>Klarna</li>
+                <li>Accessibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bottom -->
+          <div class="footer-bottom">
+            <div class="container text-cream text-poppins">
+              <p class="mb-0">© 2025 Semrawood. All rights reserved.</p>
+              <a href="#" class="underline">Privacy Policy</a> & <a href="#" class="underline">Terms of Service</a>.
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+
+  <script>
+  function showTab(tab) {
+    const desc = document.getElementById('desc-tab');
+    const review = document.getElementById('review-tab');
+    const buttons = document.querySelectorAll('.tab-btn');
+
+    if (tab === 'desc') {
+      desc.classList.remove('d-none');
+      review.classList.add('d-none');
+    } else {
+      desc.classList.add('d-none');
+      review.classList.remove('d-none');
+    }
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.tab-btn[onclick="showTab('${tab}')"]`).classList.add('active');
+  }
+</script>
+
 </html>
